@@ -1,0 +1,9 @@
+#9) Escreva um programa que peça um número à pessoa usuária e informe se ele é inteiro ou decimal.
+
+num = float(input(print("Digite um numero inteiro:")))
+num = num%1 
+
+if (num == 0):
+    print("O valor é inteiro")
+else:
+    print("O valor é decimal")
