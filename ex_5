@@ -1,0 +1,14 @@
+#5) Escreva um programa que pergunte sobre o preço de três produtos e indique qual é o produto mais barato para comprar.
+
+p1 = float(input(print('Qual o valor do primeiro produto:')))
+p2 = float(input(print('Qual o valor do segundo produto:')))
+p3 = float(input(print('Qual o valor do terceiro produto:')))
+
+if (p1 > p2):
+    menor = p2
+elif(p1 < p2):
+    menor = p1
+if (menor > p3):
+    menor = p3
+
+print(f'O produto mais barato é o de valor {p3}')
