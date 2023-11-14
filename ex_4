@@ -1,0 +1,27 @@
+#4) Escreva um programa que leia valores médios de preços de um modelo de carro por 3 anos consecutivos e exiba o valor mais alto e mais baixo entre esses três anos.
+
+valor_ano_1 = float(input(print('Digite o valor médio do carro no ano 1:')))
+valor_ano_2 = float(input(print('Digite o valor médio do carro no ano 2:')))
+valor_ano_3 = float(input(print('Digite o valor médio do carro no ano 3:')))
+
+if(valor_ano_1 > valor_ano_2):
+    maior = valor_ano_1
+elif(valor_ano_2 > valor_ano_1):
+    maior = valor_ano_2
+if(valor_ano_3 > maior):
+    maior = valor_ano_3
+elif(valor_ano_3 < maior):
+    maior = maior
+
+print(f'O maior valor do carro é de {maior}')
+
+if(valor_ano_1 > valor_ano_2):
+    menor = valor_ano_2
+elif(valor_ano_2 > valor_ano_1):
+    menor = valor_ano_1
+if(valor_ano_3 < menor):
+    menor = valor_ano_3
+elif(valor_ano_3 > menor):
+    menor = menor
+
+print(f'O menor valor do carro é de {menor}')
